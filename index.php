@@ -1,6 +1,7 @@
 <?php require_once("cabecalho.php");
 require_once("logica-usuario.php");
- ?>			
+echo "oi";
+?>
 
 			<h1>Bem vindo!</h1>
 
@@ -24,4 +25,4 @@ require_once("logica-usuario.php");
 			</table>
 			</form>
 			<?php } ?>
-<?php include("rodape.php"); ?>			
+<?php include("rodape.php"); ?>
