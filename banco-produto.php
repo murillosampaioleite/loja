@@ -40,6 +40,7 @@ function alteraProduto($conexao, Produto $produto ) {
 		categoria_id= {$produto->categoria_id},
 		usado = {$produto->usado}
 		where id = '{$produto->id}'";
+
 	return mysqli_query($conexao, $query);
 }
 
