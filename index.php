@@ -1,6 +1,5 @@
 <?php require_once("cabecalho.php");
 require_once("logica-usuario.php");
-echo "oi";
 ?>
 
 			<h1>Bem vindo!</h1>
