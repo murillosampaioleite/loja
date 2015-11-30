@@ -7,7 +7,6 @@ require_once("class/Produto.php");
 
 verificaUsuario();
 
-$produto = new Produto;
 $categoria = new Categoria;
 
 $categoria->id = $_POST['categoria_id'];
@@ -22,6 +21,8 @@ if(array_key_exists( 'usado', $_POST )) {
 } else {
 	$usado = "false";
 }
+
+$produto = new Produto( $_POST['nome'], $_POST['preco'],  $_POST['descricao'], $_POST['categoria'], $usado  );
 
 $produto->usado = $usado;
 

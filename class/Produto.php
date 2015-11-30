@@ -11,5 +11,20 @@
             $this->preco -= $this->preco * $valor;
             return $this->preco;
         }
+
+        public function setPreco($preco) {
+            if( $preco > 0 ){
+                $this->preco = $preco;
+            }
+        }
+
+        public function getPreco() {
+            return $this->preco;
+        }
+
+        function __contruct( $nome, $preco, $descricao, Categoria $categoria, $usado ) {
+
+        }
+
     }
 ?>
